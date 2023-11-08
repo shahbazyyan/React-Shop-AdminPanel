@@ -3,9 +3,13 @@ import './Productdisplay.css';
 import stars from '../Assets/star_icon.png';
 import dull_stars from '../Assets/star_dull_icon.png';
 import { ShopContext } from '../../Context/ShopContext';
+import ReactImageMagnify from 'react-image-magnify';
+
 
 function ProductDisplay(props) {
     const {product} = props;
+   
+    
     const {addToCart} = useContext(ShopContext);
   return (
     <div className='productdisplay'>
@@ -17,8 +21,23 @@ function ProductDisplay(props) {
                 <img src={product.image} alt="img" />
              </div>
              <div className="productdisplay-img">
+                {/* <div id="imageMagnifyer">
+                <ReactImageMagnify {...{
+    smallImage: {
+        alt: 'Wristwatch by Ted Baker London',
+        isFluidWidth: true,
+        src: url
+    },
+    largeImage: {
+        src: url,
+        width: 1200,
+        height: 1800
+    }
+}} />
+
+                </div> */}
                 <img className='productdisplay-main-img' src={product.image} alt="img" />
-             </div>
+                </div>
         </div>
         <div className="productdisplay-right">
             <h1>{product.name}</h1>
