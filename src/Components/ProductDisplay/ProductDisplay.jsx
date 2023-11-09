@@ -21,23 +21,21 @@ function ProductDisplay(props) {
                 <img src={product.image} alt="img" />
              </div>
              <div className="productdisplay-img">
-                {/* <div id="imageMagnifyer">
+                 <div id="imageMagnifyer">
                 <ReactImageMagnify {...{
     smallImage: {
-        alt: 'Wristwatch by Ted Baker London',
+        alt: 'img',
         isFluidWidth: true,
-        src: url
+        src: product.image,
     },
     largeImage: {
-        src: url,
-        width: 1200,
-        height: 1800
+        src: product.image,
+        width: 1600,
+        height: 2000
     }
 }} />
-
-                </div> */}
-                <img className='productdisplay-main-img' src={product.image} alt="img" />
-                </div>
+ </div>  
+    </div>           
         </div>
         <div className="productdisplay-right">
             <h1>{product.name}</h1>
