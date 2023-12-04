@@ -35,9 +35,12 @@
     font-weight: 700;
 }
 
-#imageMagnifyer {
-    width: 525px;
+.productdisplay-img {
+    width: 100%;
+    height: 100%;
 }
+
+
 
 .productdisplay-right-stars {
     display: flex;
